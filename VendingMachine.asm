@@ -24,7 +24,7 @@ section .data
     	     db "#   14       Lay's Classic               2.50     20     #",10
     	     db "#   15       Kinder Bueno                3.20     12     #",10
     	     db "#   16       Monster Energy              7.50     12     #",10
-    	     db "#   18       Sting                       3.80     18     #",10
+    	     db "#   17       Sting                       3.80     18     #",10
 	     db "##########################################################",10
 	lengmenu equ $- menu
 
@@ -52,7 +52,7 @@ _start:
 
 ;reads and stores user input
 	mov eax, 3 ;sysread
-	mov ebx, 2 ;stdin
+	mov ebx, 0 ;stdin
 	mov ecx, choice
 	mov edx, 4
 	int 0x80
