@@ -1,0 +1,18 @@
+     db "#   01       Mtn Dew         2.30     10      #",10
+     db "#   02       Coke            2.30     25      #",10
+     db "#   03       Red-Bull(eur)   1.25     25      #",10
+     db "#                                             #",10
+     db "# 04      100 Plus                    2.50   20    #",10
+     db "# 05      Milo Can                    3.00   18    #",10
+     db "# 06      Spritzer Water              1.80   30    #",10
+     db "# 07      Lipton Ice Tea              2.80   12    #",10
+     db "# 08      Nescafé Can                 3.50   14    #",10
+     db "# 09      Twisties                    2.00   22    #",10
+     db "# 10      Oreo                        2.50   16    #",10
+     db "# 11      KitKat                      2.80   15    #",10
+     db "# 12      Snickers                    3.00   10    #",10
+     db "# 13      Pringles (small)            4.00   8     #",10
+     db "# 14      Lay's Classic               2.50   20    #",10
+     db "# 15      Kinder Bueno                3.20   12    #",10
+     db "# 16      Monster Energy              7.50   12    #",10
+     db "# 18      Sting                       3.80   18    #",10
