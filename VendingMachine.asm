@@ -77,41 +77,122 @@ item_01:
 	mov ecx, testmsg
 	mov	edx, lengtest
 	int 0x80
+	jmp exit
+	
+item_02:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_02
+item_03:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_03
+item_04:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_04
+item_05:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_05
+item_06:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_06
+item_07:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_07
+item_08:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_08
+item_09:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_09
+item_10:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_10
+item_11:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_11
+item_12:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_12
+item_13:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_13
+item_14:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_14
+item_15:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_15
+item_16:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
-;item_16
-
-;item_17
+item_17:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	jmp exit
 
 ;loop
 
-;exit
+exit:
 	mov eax,1
 	int 0x80
