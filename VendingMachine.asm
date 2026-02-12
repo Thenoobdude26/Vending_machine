@@ -1,5 +1,5 @@
 section .data
-	strmsg db "Vending Machine System V0.01",10
+	strmsg db "Vending Machine System V0.03",10
 	lengmsg equ $- strmsg
 	menu db "##########################################################",10
 	     db "#                         Welcome                        #",10
@@ -28,6 +28,9 @@ section .data
 	     db "##########################################################",10
 	lengmenu equ $- menu
 
+	testmsg db "test",10
+	lengtest equ $- testmsg
+
 section .bss
 	choice resb 4
 
@@ -43,7 +46,7 @@ _start:
 	int 0x80	; you remember what this does
 
 
-;Display Menu	
+;Display Menu loop	
 	mov eax,4
 	mov ebx,1
 	mov ecx,menu
@@ -56,14 +59,58 @@ _start:
 	mov ecx, choice
 	mov edx, 4
 	int 0x80
+;ASCII to int
+	movzx	eax, byte [choice] 	;load first char to eax
+	sub	eax, 48	 	;convert from ascii to int
+	imul	eax, 10	 	;multiply by 10
+	movzx	ebx, byte [choice+1]	;load second char to ebx
+	sub	ebx, 48 	;convert from ASCII to digit
+	add	eax, ebx	; eax now holds the actual number
 
-;Display input test   
-        mov eax,4
-        mov ebx,1
-        mov ecx,choice
-        mov edx,4
-        int 0x80
+;comparizons
+	cmp eax, 1		; is eax == 1?
+	je item_01		;if yes, jump to item_01
 
+item_01:
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, testmsg
+	mov	edx, lengtest
+	int 0x80
+
+;item_02
+
+;item_03
+
+;item_04
+
+;item_05
+
+;item_06
+
+;item_07
+
+;item_08
+
+;item_09
+
+;item_10
+
+;item_11
+
+;item_12
+
+;item_13
+
+;item_14
+
+;item_15
+
+;item_16
+
+;item_17
+
+;loop
 
 ;exit
 	mov eax,1
